@@ -10,7 +10,9 @@ npm install
 yarn
 ```
 
-Second, copy `.env.example` to `.env` and add all missing values
+Second, copy `.env.example` to `.env` and add all missing values.
+
+**Note:** I only tested on PostgreSQL database
 
 Third, run the development server:
 
