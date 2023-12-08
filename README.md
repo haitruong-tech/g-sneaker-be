@@ -10,7 +10,9 @@ npm install
 yarn
 ```
 
-Second, run the development server:
+Second, copy `.env.example` to `.env` and add all missing values
+
+Third, run the development server:
 
 ```bash
 npm run start:dev
