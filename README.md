@@ -14,6 +14,14 @@ Second, copy `.env.example` to `.env` and add all missing values.
 
 **Note:** I only tested on PostgreSQL database
 
+Third, run the `seed` script to populate sample data:
+
+```bash
+npm run seed
+# or
+yarn seed
+```
+
 Third, run the development server:
 
 ```bash
@@ -27,3 +35,8 @@ Open [http://localhost:3001](http://localhost:3001) with your browser to see the
 ## Deploy on Render
 
 The project is deployed on Render, here is the link: [https://g-sneaker-be-1fu6.onrender.com/](https://g-sneaker-be-1fu6.onrender.com/)
+
+## Edit after deadline (16:00 Friday 08 December, 2023)
+
+After deadline, I've:
+- Create `seed` script in `package.json`
