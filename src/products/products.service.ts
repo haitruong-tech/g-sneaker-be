@@ -1,12 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma.service';
 import { Shoes, Prisma } from '@prisma/client';
+import { CreateProductDto } from './dto/create-product.dto';
 
 @Injectable()
 export class ProductsService {
   constructor(private prisma: PrismaService) {}
 
-  create(data: Prisma.ShoesCreateInput): Promise<Shoes> {
+  create(data: CreateProductDto): Promise<Shoes> {
     return this.prisma.shoes.create({ data });
   }
 
@@ -14,8 +15,12 @@ export class ProductsService {
     return this.prisma.shoes.findMany({ orderBy: { id: 'asc' } });
   }
 
-  findOne(userWhereUniqueInput: Prisma.ShoesWhereUniqueInput): Promise<Shoes> {
-    return this.prisma.shoes.findUnique({ where: userWhereUniqueInput });
+  async findOne(
+    userWhereUniqueInput: Prisma.ShoesWhereUniqueInput,
+  ): Promise<Shoes | null> {
+    return this.prisma.shoes.findUnique({
+      where: userWhereUniqueInput,
+    });
   }
 
   update(params: {

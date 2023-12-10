@@ -39,4 +39,5 @@ The project is deployed on Render, here is the link: [https://g-sneaker-be-1fu6.
 ## Edit after deadline (16:00 Friday 08 December, 2023)
 
 After deadline, I've:
-- Create `seed` script in `package.json`
+- Created `seed` script in `package.json`
+- Added validation
