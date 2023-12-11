@@ -32,6 +32,13 @@ yarn start:dev
 
 Open [http://localhost:3001](http://localhost:3001) with your browser to see the "Hello Word" and go to API endpoints to see corresponding responses.
 
+## Swagger
+
+To access swagger, go to http://localhost:3001/api
+
+## Postman
+To import the g-sneaker Postman collection, use the files located in the `postman` folder
+
 ## Deploy on Render
 
 The project is deployed on Render, here is the link: [https://g-sneaker-be-1fu6.onrender.com/](https://g-sneaker-be-1fu6.onrender.com/)
@@ -41,3 +48,5 @@ The project is deployed on Render, here is the link: [https://g-sneaker-be-1fu6.
 After deadline, I've:
 - Created `seed` script in `package.json`
 - Added validation
+- Created `Swagger`
+- Added the Postman collection
